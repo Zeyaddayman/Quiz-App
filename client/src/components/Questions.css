@@ -1,0 +1,54 @@
+.questions-page .answers .answer input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    opacity: 0;
+}
+
+.questions-page .answers .answer label::before {
+    content: "";
+    position: absolute;
+    left: -48px;
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: 3px solid black;
+}
+
+.questions-page .answers .answer label::after {
+    content: "";
+    position: absolute;
+    left: -48px;
+    top: 50%;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    transform: translate(6px, -50%);
+    background-color: var(--color-4);
+    transition: 0.3s opacity;
+    opacity: 0;
+}
+
+.questions-page .answers .answer input[type="radio"]:checked + label {
+    color: var(--color-4);
+}
+
+.questions-page .answers .answer input[type="radio"]:checked + label::before {
+    opacity: 1;
+    border: 3px solid var(--color-4);
+}
+
+.questions-page .answers .answer input[type="radio"]:checked + label::after {
+    opacity: 1;
+    background-color: var(--color-4);
+}
+
+.questions-page .control-btns .btn {
+    background-color: var(--color-3);   
+}
+
+.questions-page .control-btns .btn.finish {
+    background-color: var(--color-1);
+}

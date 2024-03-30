@@ -1,0 +1,15 @@
+:root {
+    --color-1: #fa3e3e;
+    --color-2: #e9ebee;
+    --color-3: #179bff;
+    --color-4: #457b9d;
+}
+
+.title {
+    border: 3px solid var(--color-3);
+    color: var(--color-1);
+}
+
+.main-page {
+    background-color: var(--color-2);
+}

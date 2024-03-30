@@ -1,0 +1,8 @@
+.result {
+    border: 3px solid var(--color-3);
+    color: var(--color-4);
+}
+
+.restart-btn {
+    background-color: var(--color-1);
+}
