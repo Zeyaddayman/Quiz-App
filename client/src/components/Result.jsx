@@ -12,7 +12,7 @@ function Result() {
     const [result, setResult] = useState('pending');
 
     useEffect(() => {
-        fetch("http://localhost:4000/api/result", {
+        fetch("https://quiz-app-1vbc.onrender.com/api/result", {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(userAnswers)

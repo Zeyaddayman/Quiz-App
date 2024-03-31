@@ -15,7 +15,7 @@ function Questions() {
     const [userAnswer, setUserAnswer] = useState(null);
 
     useEffect(() => {
-        fetch('http://localhost:4000/api/questions')
+        fetch('https://quiz-app-1vbc.onrender.com/api/questions')
         .then((res) => {
             return res.json();
         })
